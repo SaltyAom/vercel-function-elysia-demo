@@ -1,9 +1,9 @@
 import { Elysia, t } from 'elysia'
 import { swagger } from '@elysiajs/swagger'
 
-export default new Elysia()
+export default new Elysia({ prefix: '/swagger' })
     .use(swagger())
-    .get('/', 'hello')
+    .get('/', 'Hello Elysia!')
     .post('/mirror', ({ body }) => body, {
         body: t.Object({
             name: t.String()
