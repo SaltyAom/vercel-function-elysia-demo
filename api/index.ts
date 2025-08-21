@@ -1,4 +1,4 @@
-import { Elysia } from 'elysia'
+import { Elysia, t } from 'elysia'
 
 const app = new Elysia()
     .get('/', 'hello')
