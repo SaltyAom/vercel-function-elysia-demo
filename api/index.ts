@@ -11,4 +11,4 @@ const app = new Elysia()
   })
   .compile();
 
-export default app.fetch;
+export default app;
